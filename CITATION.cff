@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below."
+title: "MechanoPath: glioma classification from histopathology, pathology reports and cell biomechanics"
+authors:
+  - family-names: Brimo
+    given-names: Nura
+    affiliation: "Department of Biomedical Engineering, Duke University"
+version: 1.0.0
+date-released: 2026-10-09
+license: MIT
+keywords:
+  - glioblastoma
+  - lower-grade glioma
+  - computational pathology
+  - multimodal fusion
+  - cell mechanics
+  - TCGA

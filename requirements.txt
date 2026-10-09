@@ -1,0 +1,21 @@
+# Versions the results were produced with (Python 3.13). Newer versions should work; relax the pins if pip
+# cannot resolve them on your platform.
+numpy==2.5.3
+pandas==3.0.5
+scikit-learn==1.9.1
+scipy==1.18.1
+scikit-image==0.26.0
+opencv-python-headless==5.0.0.93
+torch==2.14.1
+torchvision==0.29.1
+statsmodels==0.15.0
+dclab==0.73.1
+umap-learn==0.5.12
+matplotlib==3.11.2
+pillow==12.3.0
+pyarrow==25.0.1
+h5py==3.16.0
+tifffile==2026.9.15
+openslide-python==1.4.6
+openslide-bin==4.0.1.2
+idc-index-data==25.0.0

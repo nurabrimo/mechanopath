@@ -1,0 +1,36 @@
+# Python / OS
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+.DS_Store
+
+# raw inputs: downloaded by scripts/fetch_public_data.sh or from the release, never committed
+data/raw/*
+!data/raw/tiles/
+data/raw/tiles/*
+!data/raw/tiles/gdc_manifest.json
+!data/raw/idc/
+
+# large derived files: attached to the GitHub release instead
+data/processed/embeddings_hipt*.npz
+*.zip
+
+# patient-linked data from new collections (e.g. matched mechanics): IRB storage only, never GitHub
+data/mechanics/
+
+# Word report build outputs (the .docx goes in the release)
+report/render/
+report/blocks.json
+report/toc_pages.json
+report/*.docx
+
+# figures/nature: keep vector PDFs and 300-dpi previews; full-resolution files are in the release
+figures/nature/*.png
+!figures/nature/*_300dpi.png
+figures/nature/fig7_attention_tiles_300dpi.png
+figures/nature/contact_TCGA-06-0156_300dpi.png
+figures/nature/fig7_attention_tiles.pdf
+figures/nature/contact_TCGA-06-0156.pdf
+figures/nature/fig7_attention_tiles.jpg
+figures/nature/contact_TCGA-06-0156.jpg
