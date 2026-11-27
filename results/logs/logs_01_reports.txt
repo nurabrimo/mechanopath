@@ -1,0 +1,34 @@
+report cohort: 868 GBM 399
+  level  reports_with_residual_dx_words examples  mean_tokens_masked
+0    M1                               0                    17.964286
+1    M2                               0                    29.434332
+          mentions_gbm  mentions_grade4  mentions_grade23    n
+project                                                       
+TCGA-GBM         0.977            0.599             0.033  399
+TCGA-LGG         0.064            0.015             0.763  469
+LGG patients whose report diagnosis line says glioblastoma/grade IV: 3
+all  patient      tfidf_M0       n=868 AUROC 0.996 [0.993,0.999] within-inst 0.980 F1 0.961
+all  patient      tfidf_M1       n=868 AUROC 0.982 [0.975,0.988] within-inst 0.945 F1 0.906
+all  patient      tfidf_M2       n=868 AUROC 0.977 [0.969,0.985] within-inst 0.934 F1 0.904
+all  patient      age            n=868 AUROC 0.788 [0.756,0.817] within-inst 0.725 F1 0.736
+all  patient      tfidf_M1+age   n=868 AUROC 0.982 [0.974,0.989] within-inst 0.944 F1 0.928
+all  institution  tfidf_M0       n=868 AUROC 0.984 [0.977,0.989] within-inst 0.981 F1 0.777
+all  institution  tfidf_M1       n=868 AUROC 0.830 [0.803,0.858] within-inst 0.877 F1 0.534
+all  institution  tfidf_M2       n=868 AUROC 0.799 [0.769,0.827] within-inst 0.835 F1 0.519
+all  institution  age            n=868 AUROC 0.777 [0.745,0.807] within-inst 0.725 F1 0.736
+all  institution  tfidf_M1+age   n=868 AUROC 0.875 [0.851,0.898] within-inst 0.858 F1 0.670
+x40  patient      tfidf_M0       n=557 AUROC 0.996 [0.992,0.998] within-inst 0.979 F1 0.915
+x40  patient      tfidf_M1       n=557 AUROC 0.977 [0.964,0.987] within-inst 0.943 F1 0.863
+x40  patient      tfidf_M2       n=557 AUROC 0.970 [0.954,0.984] within-inst 0.935 F1 0.863
+x40  patient      age            n=557 AUROC 0.780 [0.731,0.826] within-inst 0.759 F1 0.683
+x40  patient      tfidf_M1+age   n=557 AUROC 0.972 [0.951,0.987] within-inst 0.937 F1 0.874
+x40  institution  tfidf_M0       n=557 AUROC 0.984 [0.975,0.992] within-inst 0.973 F1 0.600
+x40  institution  tfidf_M1       n=557 AUROC 0.833 [0.797,0.868] within-inst 0.812 F1 0.439
+x40  institution  tfidf_M2       n=557 AUROC 0.802 [0.764,0.842] within-inst 0.778 F1 0.439
+x40  institution  age            n=557 AUROC 0.771 [0.720,0.817] within-inst 0.760 F1 0.674
+x40  institution  tfidf_M1+age   n=557 AUROC 0.860 [0.823,0.895] within-inst 0.831 F1 0.503
+rule_M0 AUROC 0.96 F1 0.957
+M1 GBM terms: pseudopalisading, necrosis, birth date, proliferation and, birth, biopsy, date tumor, left, diagnosis brain, pseudopalisading necrosis, right, of necrosis, hemorrhagic, necrosis and, brain right
+M1 LGG terms: no, is no, and xmaskx, material, xmaskx and, perinuclear, seen, moderate, round, nuclei, not seen, proliferation or, race, mild, halos
+M2 GBM terms: birth date, birth, biopsy, left, right, date tumor, hemorrhagic, diagnosis brain, brain right, received in, histological diagnosis, cassette, brain, mass, small cell
+M2 LGG terms: material, moderate, perinuclear, round, mild, nuclei, increased xmaskx, halos, xmaskx is, the xmaskx, race, moderately xmaskx, perinuclear halos, increased, rare

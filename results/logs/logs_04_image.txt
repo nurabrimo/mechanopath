@@ -1,0 +1,23 @@
+image cohort: 875
+hand-crafted tissue features: 38 | stain/sharpness features: 43
+all  patient      img_meanpool   n=875 AUROC 0.942 [0.926,0.956] within-inst 0.933 F1 0.863
+all  patient      handcrafted    n=875 AUROC 0.894 [0.873,0.915] within-inst 0.841 F1 0.806
+all  patient      stain_color    n=875 AUROC 0.866 [0.841,0.890] within-inst 0.849 F1 0.791
+all  patient      acq_meta       n=875 AUROC 0.929 [0.910,0.945] within-inst 0.919 F1 0.852
+all  patient      img_abmil      n=875 AUROC 0.945 [0.930,0.959] within-inst 0.936 F1 0.869
+all  institution  img_meanpool   n=875 AUROC 0.870 [0.846,0.894] within-inst 0.875 F1 0.794
+all  institution  handcrafted    n=875 AUROC 0.835 [0.808,0.862] within-inst 0.785 F1 0.760
+all  institution  stain_color    n=875 AUROC 0.751 [0.718,0.784] within-inst 0.773 F1 0.698
+all  institution  acq_meta       n=875 AUROC 0.774 [0.737,0.810] within-inst 0.882 F1 0.748
+all  institution  img_abmil      n=875 AUROC 0.869 [0.844,0.893] within-inst 0.881 F1 0.804
+x40  patient      img_meanpool   n=645 AUROC 0.938 [0.917,0.957] within-inst 0.915 F1 0.832
+x40  patient      handcrafted    n=645 AUROC 0.874 [0.839,0.904] within-inst 0.830 F1 0.777
+x40  patient      stain_color    n=645 AUROC 0.873 [0.843,0.902] within-inst 0.809 F1 0.773
+x40  patient      acq_meta       n=645 AUROC 0.820 [0.779,0.857] within-inst 0.744 F1 0.724
+x40  patient      img_abmil      n=645 AUROC 0.940 [0.921,0.958] within-inst 0.920 F1 0.848
+x40  institution  img_meanpool   n=645 AUROC 0.869 [0.837,0.898] within-inst 0.898 F1 0.756
+x40  institution  handcrafted    n=645 AUROC 0.803 [0.762,0.841] within-inst 0.770 F1 0.717
+x40  institution  stain_color    n=645 AUROC 0.802 [0.763,0.839] within-inst 0.765 F1 0.695
+x40  institution  acq_meta       n=645 AUROC 0.343 [0.281,0.404] within-inst 0.626 F1 0.444
+x40  institution  img_abmil      n=645 AUROC 0.851 [0.815,0.882] within-inst 0.903 F1 0.767
+saved attention

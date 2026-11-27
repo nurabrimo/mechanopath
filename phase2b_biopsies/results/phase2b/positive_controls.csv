@@ -1,0 +1,7 @@
+control,features,auroc,n_measurements
+healthy tissue: tissue (colon vs other),median deformation,0.27851851851851855,39
+healthy tissue: tissue (colon vs other),median deformation + size,0.24444444444444446,39
+healthy tissue: tissue (colon vs other),"deciles (deformation, size)",0.9325925925925926,39
+healthy tissue: preservation (frozen vs other),median deformation,0.6267857142857143,30
+healthy tissue: preservation (frozen vs other),median deformation + size,0.8776785714285713,30
+healthy tissue: preservation (frozen vs other),"deciles (deformation, size)",0.9991071428571429,30

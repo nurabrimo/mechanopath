@@ -1,0 +1,29 @@
+name: mechanopath
+channels:
+  - conda-forge
+  - pytorch
+  - nvidia
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - scikit-image
+  - statsmodels
+  - matplotlib
+  - h5py
+  - opencv
+  - openslide            # C library
+  - pip:
+      - openslide-python
+      - openslide-bin       # bundled OpenSlide binaries; works even if the conda openslide is missing
+      - torch               # pick the CUDA build that matches the DCC driver if pip's default does not
+      - torchvision
+      - timm>=1.0
+      - huggingface_hub
+      - transformers>=4.44
+      - accelerate
+      - dclab               # RT-DC files (mechanics branch)
+      - torchstain          # optional Macenko normalisation at feature-extraction time

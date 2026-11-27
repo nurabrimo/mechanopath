@@ -1,0 +1,7 @@
+stratum,condition,count,median,min,max
+colon-fresh,healthy,14,823.0,414,2487
+colon-fresh,tumour,14,1397.5,890,2740
+colon-frozen,healthy,16,310.5,135,827
+colon-frozen,tumour,16,432.5,236,1081
+lung-fresh,healthy,9,982.0,481,4250
+lung-fresh,tumour,9,1063.0,822,4121

@@ -1,0 +1,9 @@
+feature,pair type,n_pairs,w1_full,median_shift,shape_w1,location_share_of_w1
+log10 deformation,same unit: tumour vs healthy,39,0.09574614144223188,0.12419891508186215,0.05263837327335894,1.1881906991573392
+log10 deformation,"same stratum, different units, same condition: tumour-tumour / healthy-healthy",494,0.09229159415729225,0.11645906705002483,0.05103889998348319,1.2010495609654428
+log10 deformation,"same stratum, different units, different condition",494,0.10500196926663499,0.1335066488399383,0.055562643719142824,1.192053248982699
+log10 deformation,split-half noise floor (shape),78,,,0.021902525578064522,
+log10 area,same unit: tumour vs healthy,39,0.10733033990707895,0.10861301594716612,0.08113126686265279,0.8381860294079251
+log10 area,"same stratum, different units, same condition: tumour-tumour / healthy-healthy",494,0.09848362142985355,0.11503521631933064,0.07770418469078691,1.0353858479438738
+log10 area,"same stratum, different units, different condition",494,0.11782485451349699,0.1295657645491897,0.08787852632190456,0.9875580384006156
+log10 area,split-half noise floor (shape),78,,,0.021682435603812673,

@@ -1,0 +1,49 @@
+cohort,scheme,model,institution,n_gbm,n_lgg,auroc,lo,hi
+all,institution,fusion_primary,Case Western,38,38,0.9785318559556787,0.9552925680609797,1.0
+all,institution,fusion_primary,Duke,15,19,0.9824561403508771,0.951554289484127,1.0
+all,institution,fusion_primary,Henry Ford Hospital,88,78,0.960081585081585,0.9327601634464738,0.9874030067166962
+all,institution,fusion_primary,Mayo Clinic - Rochester,5,34,0.9941176470588236,0.9778125965749925,1.0
+all,institution,fusion_primary,University of Florida,15,14,0.9428571428571428,0.852134686416832,1.0
+all,institution,image_phikon2_abmil,Case Western,38,38,0.9729916897506925,0.9453450593894049,1.0
+all,institution,image_phikon2_abmil,Duke,15,19,0.9473684210526315,0.8819590060309728,1.0
+all,institution,image_phikon2_abmil,Henry Ford Hospital,88,78,0.9798951048951049,0.9640934265451568,0.995696783245053
+all,institution,image_phikon2_abmil,Mayo Clinic - Rochester,5,34,1.0,1.0,1.0
+all,institution,image_phikon2_abmil,University of Florida,15,14,0.9523809523809523,0.8773816931253511,1.0
+all,institution,report_bert_M2,Case Western,38,38,0.7984764542936288,0.6939600277756787,0.9029928808115789
+all,institution,report_bert_M2,Duke,15,19,0.8,0.6329760349818219,0.9670239650181782
+all,institution,report_bert_M2,Henry Ford Hospital,88,78,0.576048951048951,0.48872641252346316,0.6633714895744389
+all,institution,report_bert_M2,Mayo Clinic - Rochester,5,34,0.5764705882352941,0.32404531823633703,0.8288958582342512
+all,institution,report_bert_M2,University of Florida,15,14,0.5666666666666667,0.34529317633365,0.7880401569996833
+all,patient,fusion_primary,Case Western,38,38,0.971606648199446,0.9434319405412286,0.9997813558576634
+all,patient,fusion_primary,Duke,15,19,1.0,1.0,1.0
+all,patient,fusion_primary,Henry Ford Hospital,88,78,0.9966491841491841,0.9925140518985764,1.0
+all,patient,fusion_primary,Mayo Clinic - Rochester,5,34,0.9941176470588236,0.9778125965749925,1.0
+all,patient,fusion_primary,University of Florida,15,14,0.9428571428571428,0.852134686416832,1.0
+all,patient,image_phikon2_abmil,Case Western,38,38,0.9729916897506925,0.9444029355553767,1.0
+all,patient,image_phikon2_abmil,Duke,15,19,1.0,1.0,1.0
+all,patient,image_phikon2_abmil,Henry Ford Hospital,88,78,0.9956293706293706,0.9905523072102981,1.0
+all,patient,image_phikon2_abmil,Mayo Clinic - Rochester,5,34,0.9823529411764705,0.9427176107098069,1.0
+all,patient,image_phikon2_abmil,University of Florida,15,14,0.9619047619047619,0.901386205027588,1.0
+all,patient,report_bert_M2,Case Western,38,38,0.8296398891966759,0.734388408260859,0.9248913701324927
+all,patient,report_bert_M2,Duke,15,19,0.9649122807017544,0.9126878594858637,1.0
+all,patient,report_bert_M2,Henry Ford Hospital,88,78,0.8509615384615384,0.7903095332089299,0.9116135437141469
+all,patient,report_bert_M2,Mayo Clinic - Rochester,5,34,0.8352941176470589,0.6254772529689167,1.0
+all,patient,report_bert_M2,University of Florida,15,14,0.8095238095238095,0.651470697169809,0.9675769218778101
+x40,institution,fusion_primary,Case Western,38,38,0.9729916897506925,0.9450726369000246,1.0
+x40,institution,fusion_primary,Henry Ford Hospital,17,77,0.9159663865546218,0.8502253430793972,0.9817074300298464
+x40,institution,fusion_primary,University of Florida,15,14,0.9809523809523809,0.9401870529663097,1.0
+x40,institution,image_phikon2_abmil,Case Western,38,38,0.96398891966759,0.9300796223296796,0.9978982170055005
+x40,institution,image_phikon2_abmil,Henry Ford Hospital,17,77,0.9427043544690603,0.8921435518480958,0.9932651570900248
+x40,institution,image_phikon2_abmil,University of Florida,15,14,0.9857142857142858,0.9570887935190622,1.0
+x40,institution,report_bert_M2,Case Western,38,38,0.7901662049861495,0.6899299291411116,0.8904024808311874
+x40,institution,report_bert_M2,Henry Ford Hospital,17,77,0.5194805194805194,0.38000597007168424,0.6589550688893546
+x40,institution,report_bert_M2,University of Florida,15,14,0.7,0.4976747139690113,0.9023252860309886
+x40,patient,fusion_primary,Case Western,38,38,0.9605263157894737,0.9209684758224037,1.0
+x40,patient,fusion_primary,Henry Ford Hospital,17,77,0.9717341482047365,0.9435715495676539,0.9998967468418191
+x40,patient,fusion_primary,University of Florida,15,14,0.9428571428571428,0.8585273060997924,1.0
+x40,patient,image_phikon2_abmil,Case Western,38,38,0.9556786703601108,0.9122139710645816,0.99914336965564
+x40,patient,image_phikon2_abmil,Henry Ford Hospital,17,77,0.974025974025974,0.9474396944783325,1.0
+x40,patient,image_phikon2_abmil,University of Florida,15,14,0.9571428571428572,0.893871362366125,1.0
+x40,patient,report_bert_M2,Case Western,38,38,0.8310249307479224,0.7389288309921502,0.9231210305036945
+x40,patient,report_bert_M2,Henry Ford Hospital,17,77,0.771581359816654,0.66100822299179,0.882154496641518
+x40,patient,report_bert_M2,University of Florida,15,14,0.8238095238095238,0.661746330479025,0.9858727171400226

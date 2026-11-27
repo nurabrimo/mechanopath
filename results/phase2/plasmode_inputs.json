@@ -1,0 +1,24 @@
+{
+  "scores": "phase1_oof.csv:fusion_primary:all:institution",
+  "n_patients": 689,
+  "n_gbm": 245,
+  "score_auroc": 0.9578874793160508,
+  "templates": 21,
+  "tau_loc": 0.03,
+  "tau_scale": 0.09,
+  "delta": 0.072,
+  "s0": 0.13,
+  "tail_shift": 0.3,
+  "redundant_beta": 0.04422323186729997,
+  "reps_main": 500,
+  "reps_grid": 300,
+  "anchors": {
+    "delta_log10_median_R132H_vs_wt": 0.0716476509647132,
+    "fold_median_R132H_vs_wt": 1.1793634137810425,
+    "ratio_log10_iqr_R132H_vs_wt": 1.1152371932630505,
+    "sd_log10_median_between_cultures_within_idh": 0.0247819210001482,
+    "sd_ln_log10_iqr_between_cultures_within_idh": 0.4745378521696552,
+    "rtdc_sd_median_between_samples_within_condition": 0.0320316283839861,
+    "rtdc_sd_ln_iqr_between_samples_within_condition": 0.0913612085744885
+  }
+}

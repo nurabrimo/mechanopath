@@ -1,0 +1,191 @@
+[all] matched cohort: 686  GBM 244
+[x40] matched cohort: 556  GBM 114
+cohort      scheme                      model   n  auroc  auroc_lo  auroc_hi  auroc_within_institution  macro_f1  brier   ece
+   all     patient             image_meanpool 686  0.934     0.914     0.951                     0.928     0.851  0.097 0.029
+   all     patient                image_abmil 686  0.938     0.917     0.956                     0.929     0.864  0.091 0.029
+   all     patient          image_handcrafted 686  0.876     0.848     0.901                     0.823     0.780  0.134 0.035
+   all     patient                  report_M1 686  0.982     0.974     0.989                     0.953     0.919  0.054 0.039
+   all     patient                  report_M2 686  0.977     0.968     0.985                     0.944     0.914  0.060 0.040
+   all     patient                        age 686  0.780     0.743     0.815                     0.720     0.725  0.184 0.080
+   all     patient        acq_meta (nuisance) 686  0.906     0.881     0.929                     0.914     0.817  0.106 0.044
+   all     patient     stain_color (nuisance) 686  0.842     0.810     0.869                     0.839     0.773  0.153 0.059
+   all     patient       report_M0 (unmasked) 686  0.997     0.995     0.999                     0.987     0.971  0.021 0.033
+   all     patient       late_image+report_M1 686  0.988     0.981     0.994                     0.976     0.944  0.041 0.056
+   all     patient       late_image+report_M2 686  0.986     0.978     0.992                     0.972     0.943  0.044 0.055
+   all     patient   late_image+report_M2+age 686  0.987     0.980     0.993                     0.974     0.941  0.051 0.096
+   all     patient        late_image+acq_meta 686  0.963     0.950     0.975                     0.967     0.890  0.072 0.043
+   all     patient      early_image+report_M2 686  0.963     0.948     0.976                     0.940     0.907  0.067 0.021
+   all     patient three_input_with_mechanics   0    NaN       NaN       NaN                       NaN       NaN    NaN   NaN
+   all institution             image_meanpool 686  0.864     0.834     0.893                     0.879     0.779  0.142 0.054
+   all institution                image_abmil 686  0.870     0.841     0.897                     0.885     0.783  0.153 0.105
+   all institution          image_handcrafted 686  0.812     0.777     0.845                     0.757     0.745  0.166 0.061
+   all institution                  report_M1 686  0.845     0.816     0.873                     0.873     0.702  0.165 0.094
+   all institution                  report_M2 686  0.813     0.780     0.843                     0.831     0.664  0.184 0.113
+   all institution                        age 686  0.768     0.730     0.803                     0.721     0.715  0.189 0.084
+   all institution        acq_meta (nuisance) 686  0.752     0.707     0.799                     0.876     0.751  0.172 0.136
+   all institution     stain_color (nuisance) 686  0.731     0.690     0.769                     0.786     0.671  0.216 0.111
+   all institution       report_M0 (unmasked) 686  0.987     0.980     0.993                     0.981     0.909  0.053 0.071
+   all institution       late_image+report_M1 686  0.927     0.907     0.944                     0.938     0.816  0.110 0.070
+   all institution       late_image+report_M2 686  0.916     0.895     0.935                     0.930     0.805  0.117 0.061
+   all institution   late_image+report_M2+age 686  0.930     0.909     0.947                     0.932     0.823  0.113 0.099
+   all institution        late_image+acq_meta 686  0.862     0.829     0.894                     0.931     0.796  0.127 0.066
+   all institution      early_image+report_M2 686  0.859     0.828     0.886                     0.864     0.757  0.150 0.077
+   all institution three_input_with_mechanics   0    NaN       NaN       NaN                       NaN       NaN    NaN   NaN
+   x40     patient             image_meanpool 556  0.929     0.902     0.953                     0.912     0.825  0.079 0.015
+   x40     patient                image_abmil 556  0.935     0.911     0.957                     0.917     0.827  0.080 0.045
+   x40     patient          image_handcrafted 556  0.855     0.814     0.894                     0.826     0.744  0.109 0.020
+   x40     patient                  report_M1 556  0.977     0.964     0.987                     0.944     0.909  0.045 0.029
+   x40     patient                  report_M2 556  0.970     0.954     0.984                     0.935     0.904  0.048 0.027
+   x40     patient                        age 556  0.779     0.730     0.828                     0.759     0.659  0.129 0.033
+   x40     patient        acq_meta (nuisance) 556  0.798     0.750     0.840                     0.754     0.579  0.131 0.066
+   x40     patient     stain_color (nuisance) 556  0.852     0.814     0.886                     0.793     0.746  0.114 0.037
+   x40     patient       report_M0 (unmasked) 556  0.996     0.992     0.999                     0.979     0.957  0.023 0.025
+   x40     patient       late_image+report_M1 556  0.983     0.972     0.992                     0.959     0.923  0.039 0.042
+   x40     patient       late_image+report_M2 556  0.979     0.967     0.990                     0.955     0.920  0.041 0.039
+   x40     patient   late_image+report_M2+age 556  0.977     0.962     0.989                     0.950     0.905  0.050 0.076
+   x40     patient        late_image+acq_meta 556  0.935     0.911     0.956                     0.920     0.771  0.085 0.054
+   x40     patient      early_image+report_M2 556  0.947     0.920     0.970                     0.901     0.869  0.065 0.059
+   x40     patient three_input_with_mechanics   0    NaN       NaN       NaN                       NaN       NaN    NaN   NaN
+   x40 institution             image_meanpool 556  0.856     0.819     0.890                     0.893     0.704  0.121 0.052
+   x40 institution                image_abmil 556  0.841     0.801     0.881                     0.902     0.733  0.128 0.079
+   x40 institution          image_handcrafted 556  0.794     0.745     0.839                     0.762     0.667  0.135 0.038
+   x40 institution                  report_M1 556  0.832     0.795     0.865                     0.813     0.535  0.155 0.135
+   x40 institution                  report_M2 556  0.802     0.761     0.838                     0.778     0.541  0.160 0.134
+   x40 institution                        age 556  0.770     0.717     0.819                     0.760     0.633  0.134 0.013
+   x40 institution        acq_meta (nuisance) 556  0.434     0.366     0.502                     0.636     0.489  0.239 0.242
+   x40 institution     stain_color (nuisance) 556  0.787     0.740     0.827                     0.749     0.695  0.140 0.070
+   x40 institution       report_M0 (unmasked) 556  0.984     0.975     0.992                     0.973     0.846  0.063 0.075
+   x40 institution       late_image+report_M1 556  0.918     0.892     0.941                     0.923     0.606  0.117 0.094
+   x40 institution       late_image+report_M2 556  0.908     0.880     0.932                     0.912     0.595  0.120 0.089
+   x40 institution   late_image+report_M2+age 556  0.915     0.886     0.939                     0.909     0.576  0.114 0.091
+   x40 institution        late_image+acq_meta 556  0.667     0.601     0.725                     0.781     0.630  0.154 0.078
+   x40 institution      early_image+report_M2 556  0.877     0.845     0.907                     0.865     0.640  0.116 0.069
+   x40 institution three_input_with_mechanics   0    NaN       NaN       NaN                       NaN       NaN    NaN   NaN
+cohort      scheme            baseline                    model  delta_auroc      lo      hi  p_bootstrap  p_delong
+   all     patient      image_meanpool     late_image+report_M2       0.0523  0.0384  0.0684       0.0005    0.0000
+   all     patient           report_M2     late_image+report_M2       0.0089  0.0028  0.0153       0.0010    0.0052
+   all     patient      image_meanpool     late_image+report_M1       0.0546  0.0406  0.0707       0.0005    0.0000
+   all     patient           report_M1     late_image+report_M1       0.0064  0.0010  0.0122       0.0200    0.0250
+   all     patient           report_M2    early_image+report_M2      -0.0136 -0.0268 -0.0015       0.0230    0.0312
+   all     patient      image_meanpool    early_image+report_M2       0.0298  0.0181  0.0430       0.0005    0.0000
+   all     patient      image_meanpool              image_abmil       0.0045 -0.0076  0.0164       0.4440    0.4566
+   all     patient   image_handcrafted           image_meanpool       0.0581  0.0344  0.0819       0.0005    0.0000
+   all     patient acq_meta (nuisance)      late_image+acq_meta       0.0576  0.0395  0.0757       0.0005    0.0000
+   all     patient      image_meanpool      late_image+acq_meta       0.0297  0.0155  0.0450       0.0005    0.0001
+   all     patient acq_meta (nuisance)           image_meanpool       0.0278 -0.0018  0.0554       0.0650    0.0590
+   all     patient                 age late_image+report_M2+age       0.2070  0.1733  0.2424       0.0005    0.0000
+   all institution      image_meanpool     late_image+report_M2       0.0516  0.0312  0.0724       0.0005    0.0000
+   all institution           report_M2     late_image+report_M2       0.1032  0.0774  0.1290       0.0005    0.0000
+   all institution      image_meanpool     late_image+report_M1       0.0629  0.0429  0.0831       0.0005    0.0000
+   all institution           report_M1     late_image+report_M1       0.0823  0.0580  0.1055       0.0005    0.0000
+   all institution           report_M2    early_image+report_M2       0.0459  0.0078  0.0826       0.0120    0.0162
+   all institution      image_meanpool    early_image+report_M2      -0.0057 -0.0257  0.0140       0.6030    0.5662
+   all institution      image_meanpool              image_abmil       0.0056 -0.0141  0.0278       0.5900    0.5994
+   all institution   image_handcrafted           image_meanpool       0.0520  0.0194  0.0850       0.0010    0.0017
+   all institution acq_meta (nuisance)      late_image+acq_meta       0.1101  0.0850  0.1359       0.0005    0.0000
+   all institution      image_meanpool      late_image+acq_meta      -0.0026 -0.0320  0.0290       0.9250    0.8678
+   all institution acq_meta (nuisance)           image_meanpool       0.1127  0.0640  0.1612       0.0005    0.0000
+   all institution                 age late_image+report_M2+age       0.1617  0.1271  0.1959       0.0005    0.0000
+   x40     patient      image_meanpool     late_image+report_M2       0.0505  0.0312  0.0719       0.0005    0.0000
+   x40     patient           report_M2     late_image+report_M2       0.0092  0.0006  0.0185       0.0290    0.0426
+   x40     patient      image_meanpool     late_image+report_M1       0.0543  0.0353  0.0760       0.0005    0.0000
+   x40     patient           report_M1     late_image+report_M1       0.0066 -0.0003  0.0146       0.0730    0.0814
+   x40     patient           report_M2    early_image+report_M2      -0.0231 -0.0468 -0.0034       0.0250    0.0371
+   x40     patient      image_meanpool    early_image+report_M2       0.0182  0.0005  0.0377       0.0400    0.0497
+   x40     patient      image_meanpool              image_abmil       0.0058 -0.0083  0.0204       0.4230    0.4217
+   x40     patient   image_handcrafted           image_meanpool       0.0740  0.0399  0.1104       0.0005    0.0001
+   x40     patient acq_meta (nuisance)      late_image+acq_meta       0.1373  0.1023  0.1758       0.0005    0.0000
+   x40     patient      image_meanpool      late_image+acq_meta       0.0060 -0.0145  0.0250       0.5280    0.5453
+   x40     patient acq_meta (nuisance)           image_meanpool       0.1313  0.0825  0.1849       0.0005    0.0000
+   x40     patient                 age late_image+report_M2+age       0.1976  0.1529  0.2439       0.0005    0.0000
+   x40 institution      image_meanpool     late_image+report_M2       0.0518  0.0261  0.0790       0.0005    0.0001
+   x40 institution           report_M2     late_image+report_M2       0.1063  0.0740  0.1393       0.0005    0.0000
+   x40 institution      image_meanpool     late_image+report_M1       0.0623  0.0375  0.0895       0.0005    0.0000
+   x40 institution           report_M1     late_image+report_M1       0.0859  0.0566  0.1164       0.0005    0.0000
+   x40 institution           report_M2    early_image+report_M2       0.0755  0.0298  0.1199       0.0010    0.0010
+   x40 institution      image_meanpool    early_image+report_M2       0.0210 -0.0010  0.0438       0.0660    0.0718
+   x40 institution      image_meanpool              image_abmil      -0.0149 -0.0424  0.0132       0.3140    0.2971
+   x40 institution   image_handcrafted           image_meanpool       0.0617  0.0200  0.1053       0.0040    0.0047
+   x40 institution acq_meta (nuisance)      late_image+acq_meta       0.2326  0.1933  0.2733       0.0005    0.0000
+   x40 institution      image_meanpool      late_image+acq_meta      -0.1891 -0.2439 -0.1384       0.0005    0.0000
+   x40 institution acq_meta (nuisance)           image_meanpool       0.4217  0.3495  0.4962       0.0005    0.0000
+   x40 institution                 age late_image+report_M2+age       0.1445  0.1032  0.1854       0.0005    0.0000
+cohort      scheme                model label              group   n  mean_p_gbm  frac_called_gbm@0.5
+   all institution       image_meanpool   LGG       Astro_IDHmut 208       0.186                0.115
+   all institution       image_meanpool   LGG          GBM_IDHwt  61       0.356                0.295
+   all institution       image_meanpool   LGG        IDHwt_other  24       0.252                0.125
+   all institution       image_meanpool   LGG Oligo_IDHmut_codel 146       0.214                0.130
+   all institution       image_meanpool   LGG            unknown   3       0.245                0.333
+   all institution       image_meanpool   GBM       Astro_IDHmut  12       0.478                0.417
+   all institution       image_meanpool   GBM          GBM_IDHwt 206       0.678                0.733
+   all institution       image_meanpool   GBM        IDHwt_other   1       0.413                0.000
+   all institution       image_meanpool   GBM Oligo_IDHmut_codel   1       0.923                1.000
+   all institution       image_meanpool   GBM            unknown  24       0.642                0.583
+   all institution late_image+report_M2   LGG       Astro_IDHmut 208       0.151                0.053
+   all institution late_image+report_M2   LGG          GBM_IDHwt  61       0.266                0.148
+   all institution late_image+report_M2   LGG        IDHwt_other  24       0.138                0.042
+   all institution late_image+report_M2   LGG Oligo_IDHmut_codel 146       0.180                0.089
+   all institution late_image+report_M2   LGG            unknown   3       0.217                0.333
+   all institution late_image+report_M2   GBM       Astro_IDHmut  12       0.460                0.333
+   all institution late_image+report_M2   GBM          GBM_IDHwt 206       0.618                0.680
+   all institution late_image+report_M2   GBM        IDHwt_other   1       0.505                1.000
+   all institution late_image+report_M2   GBM Oligo_IDHmut_codel   1       0.776                1.000
+   all institution late_image+report_M2   GBM            unknown  24       0.643                0.667
+   all institution            report_M2   LGG       Astro_IDHmut 208       0.189                0.115
+   all institution            report_M2   LGG          GBM_IDHwt  61       0.238                0.164
+   all institution            report_M2   LGG        IDHwt_other  24       0.090                0.000
+   all institution            report_M2   LGG Oligo_IDHmut_codel 146       0.218                0.171
+   all institution            report_M2   LGG            unknown   3       0.196                0.333
+   all institution            report_M2   GBM       Astro_IDHmut  12       0.412                0.333
+   all institution            report_M2   GBM          GBM_IDHwt 206       0.493                0.427
+   all institution            report_M2   GBM        IDHwt_other   1       0.597                1.000
+   all institution            report_M2   GBM Oligo_IDHmut_codel   1       0.498                0.000
+   all institution            report_M2   GBM            unknown  24       0.626                0.708
+   all institution       image_meanpool grade                 G2 186       0.151                0.081
+   all institution       image_meanpool grade                 G3 208       0.270                0.178
+   all institution       image_meanpool grade                 G4 242       0.666                0.702
+   all institution late_image+report_M2 grade                 G2 186       0.124                0.048
+   all institution late_image+report_M2 grade                 G3 208       0.201                0.082
+   all institution late_image+report_M2 grade                 G4 242       0.615                0.665
+   all institution            report_M2 grade                 G2 186       0.174                0.129
+   all institution            report_M2 grade                 G3 208       0.198                0.120
+   all institution            report_M2 grade                 G4 242       0.504                0.450
+   x40 institution       image_meanpool   LGG       Astro_IDHmut 208       0.106                0.053
+   x40 institution       image_meanpool   LGG          GBM_IDHwt  61       0.262                0.213
+   x40 institution       image_meanpool   LGG        IDHwt_other  24       0.137                0.042
+   x40 institution       image_meanpool   LGG Oligo_IDHmut_codel 146       0.136                0.075
+   x40 institution       image_meanpool   LGG            unknown   3       0.159                0.000
+   x40 institution       image_meanpool   GBM       Astro_IDHmut   6       0.216                0.000
+   x40 institution       image_meanpool   GBM          GBM_IDHwt  92       0.519                0.511
+   x40 institution       image_meanpool   GBM        IDHwt_other   1       0.565                1.000
+   x40 institution       image_meanpool   GBM Oligo_IDHmut_codel   1       0.445                0.000
+   x40 institution       image_meanpool   GBM            unknown  14       0.408                0.286
+   x40 institution late_image+report_M2   LGG       Astro_IDHmut 208       0.059                0.010
+   x40 institution late_image+report_M2   LGG          GBM_IDHwt  61       0.116                0.033
+   x40 institution late_image+report_M2   LGG        IDHwt_other  24       0.048                0.000
+   x40 institution late_image+report_M2   LGG Oligo_IDHmut_codel 146       0.075                0.027
+   x40 institution late_image+report_M2   LGG            unknown   3       0.135                0.000
+   x40 institution late_image+report_M2   GBM       Astro_IDHmut   6       0.150                0.000
+   x40 institution late_image+report_M2   GBM          GBM_IDHwt  92       0.317                0.185
+   x40 institution late_image+report_M2   GBM        IDHwt_other   1       0.269                0.000
+   x40 institution late_image+report_M2   GBM Oligo_IDHmut_codel   1       0.200                0.000
+   x40 institution late_image+report_M2   GBM            unknown  14       0.325                0.286
+   x40 institution            report_M2   LGG       Astro_IDHmut 208       0.065                0.019
+   x40 institution            report_M2   LGG          GBM_IDHwt  61       0.086                0.049
+   x40 institution            report_M2   LGG        IDHwt_other  24       0.023                0.000
+   x40 institution            report_M2   LGG Oligo_IDHmut_codel 146       0.075                0.041
+   x40 institution            report_M2   LGG            unknown   3       0.113                0.000
+   x40 institution            report_M2   GBM       Astro_IDHmut   6       0.127                0.000
+   x40 institution            report_M2   GBM          GBM_IDHwt  92       0.199                0.152
+   x40 institution            report_M2   GBM        IDHwt_other   1       0.095                0.000
+   x40 institution            report_M2   GBM Oligo_IDHmut_codel   1       0.072                0.000
+   x40 institution            report_M2   GBM            unknown  14       0.252                0.000
+   x40 institution       image_meanpool grade                 G2 186       0.077                0.027
+   x40 institution       image_meanpool grade                 G3 208       0.176                0.106
+   x40 institution       image_meanpool grade                 G4 112       0.489                0.455
+   x40 institution late_image+report_M2 grade                 G2 186       0.043                0.005
+   x40 institution late_image+report_M2 grade                 G3 208       0.082                0.014
+   x40 institution late_image+report_M2 grade                 G4 112       0.310                0.188
+   x40 institution            report_M2 grade                 G2 186       0.047                0.005
+   x40 institution            report_M2 grade                 G3 208       0.066                0.024
+   x40 institution            report_M2 grade                 G4 112       0.203                0.125

@@ -1,0 +1,6 @@
+modality,patients,GBM,LGG,institutions
+labels (pan-glioma),1122,606,516,38
+pathology report,868,399,469,38
+diagnostic slide,880,389,491,34
+report + slide,689,245,444,33
+whole-cell mechanics,0,0,0,0

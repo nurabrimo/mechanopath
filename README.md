@@ -1,46 +1,59 @@
 # MechanoPath
 
-Glioblastoma (TCGA-GBM) vs lower-grade glioma (TCGA-LGG) from H&E whole-slide images, pathology reports with the
-diagnosis masked, and whole-cell biomechanics. The question is whether cell mechanics adds information beyond what
-slides and reports already carry. Every model shares the same patient-level splits and is also tested with whole
-institutions held out, on 40×-scanned slides only, and against acquisition-only baselines, so scanner and site
-shortcuts are measured rather than assumed away.
+Glioblastoma (GBM) versus lower-grade glioma (LGG) from H&E whole-slide images and pathology reports, evaluated at
+institutions the model has not seen, and a test of whether single-cell mechanics carries diagnostic information beyond
+its average.
+
+**Part 1, routine pathology.** 689 TCGA patients (245 GBM, 444 LGG; 33 tissue-source sites). An attention-based
+multiple-instance model on Phikon-v2 features of 7.47 million tissue tiles and a BiomedBERT model on pathology reports
+with tumour type, grade, molecular findings and grading criteria masked are combined by late fusion. Every analysis is
+run with whole institutions held out and repeated on slides scanned at 40×, where scan magnification no longer separates
+the classes, and against acquisition-only baselines, so site and scanner shortcuts are measured rather than assumed away.
+
+**Part 2, single-cell mechanics.** Public deformability-cytometry data from glioblastoma lines in three signalling
+states (21,738 cells) and from 39 human tumour–healthy tissue pairs, and a simulation-based design of a matched images,
+reports and mechanics study.
 
 ## Main results
 
-Matched cohort (686 patients with a usable slide and a report), whole institutions held out:
-
-| Model | AUROC [95% CI], all slides | AUROC, 40×-scanned slides only (n = 556) |
+| Model (institutions held out) | AUROC, all slides (n = 689) | AUROC, 40× slides (n = 557) |
 |---|---|---|
-| Image + masked report (late fusion) | 0.916 [0.895, 0.935] | 0.908 [0.880, 0.932] |
-| Image only (HIPT mean-pool) | 0.864 [0.834, 0.893] | 0.856 [0.819, 0.890] |
-| Masked report only (M2) | 0.813 [0.780, 0.843] | 0.802 [0.761, 0.838] |
-| Acquisition metadata only | 0.752 [0.707, 0.799] | 0.434 [0.366, 0.502] |
+| Image + report, late fusion (primary) | 0.958 (0.943–0.973) | 0.913 (0.886–0.941) |
+| Image + report, TF-IDF fusion (secondary) | 0.971 (0.960–0.981) | – |
+| Image, Phikon-v2 attention MIL | 0.948 (0.933–0.964) | 0.890 (0.859–0.920) |
+| Report, TF-IDF (masked) | 0.813 (0.782–0.844) | 0.802 (0.764–0.841) |
+| Report, BiomedBERT (masked) | 0.701 (0.662–0.740) | 0.691 (0.634–0.747) |
+| Acquisition metadata only | 0.752 (0.706–0.798) | 0.434 (0.364–0.504) |
 
-- Fusion beats either input alone (paired DeLong p < 0.001).
-- Random patient folds inflate every model (fusion 0.986), because GBM and LGG came from different sites,
-  years and scanners.
-- No public dataset links whole-cell mechanics to these patients, so the three-input test is specified but
-  not yet runnable. Detecting a +0.03 AUROC gain over a 0.90 baseline needs about 150 matched patients per
-  class.
-
-![ROC curves, institutions held out](figures/nature/fig9_roc_curves_300dpi.png)
-
-The full write-up (methods, every table and figure, how to rerun, source code) is the Word report attached to
-the v1.0 release.
+- Random patient folds inflate every model (fusion 0.995) because GBM and LGG came from different sites and scanners.
+- LGG-labelled tumours with molecular features of glioblastoma (WHO CNS5) are called GBM by the fused model in 21% of
+  cases, against 5% of IDH-mutant astrocytomas.
+- Glioblastoma lines: signalling states shift the median stiffness (0.80- and 0.72-fold) but not the shape of the
+  distribution; shape descriptors do not reproduce across days.
+- Human biopsies: tumour cells deform less than matched healthy cells (median alone, AUROC 0.72); the full distribution
+  adds nothing (ΔAUROC −0.020, 95% CI −0.057 to 0.012), although it identifies organ (0.93) and frozen versus fresh
+  tissue (0.999).
+- Pipeline v1 (16 sampled tiles per slide, HIPT features; `src/`, `results/fusion_metrics.csv`) is kept as a lighter
+  replication; it reached 0.916 with institutions held out. The full-resolution results above supersede it.
 
 ## Repository layout
 
 ```
-src/            CPU analysis, steps 00-12 (every number in the report)
-dcc/            full-resolution pipeline for the Duke Compute Cluster (SLURM, GPU)
-harvest/        browser script that sampled slide tiles from the GDC tile service
-report/         builds the Word report from the result files
-scripts/        fetch_public_data.sh downloads the public inputs that are not stored here
-data/processed/ cohort, splits, slide metadata, tile features, masked reports, gated RT-DC events
-data/raw/       only the GDC manifest and IDC index extract are versioned; everything else is downloaded
-results/        metric tables, out-of-fold predictions, audits, logs
-figures/        first-version PNGs; figures/nature/ = Nature-style vector PDFs and 300-dpi previews
+src/                 CPU analysis, steps 00–12 (pipeline v1: cohort, reports, tiles, models, fusion, confounding, mechanics)
+dcc/                 full-resolution pipeline for the Duke Compute Cluster (Slurm, GPU); see dcc/README_DCC.md
+                     ext_validate.py      refit of the image model on all TCGA patients, scoring of DeepHisto and CPTAC-GBM
+                     extract_real_images.py   slide tiles and single-cell images shown in the overview figure
+phase2b_biopsies/    human tumour versus healthy tissue (RT-FDC, DCOR): analysis, extraction scripts and results
+harvest/             browser script that sampled slide tiles from the GDC tile service (pipeline v1)
+scripts/             fetch_public_data.sh downloads the public inputs that are not stored here
+data/processed/      cohort, splits, slide metadata, tile features, masked reports, gated RT-DC and AFM events
+data/raw/            GDC manifest and IDC index extract only; slides and model weights are downloaded, not stored
+results/             metric tables, out-of-fold predictions and audits; phase1/ (full resolution), phase2/ (mechanics,
+                     design analysis), real_images/ (images in the overview figure, with provenance.json)
+figures/manuscript/  figures of the first manuscript draft
+paper_figures/       scripts and vector PDFs of the figures of the journal submission
+report/              scripts that build the full Word report
+licenses/            third-party licences of redistributed derived data
 ```
 
 ## Rerunning
@@ -48,33 +61,30 @@ figures/        first-version PNGs; figures/nature/ = Nature-style vector PDFs a
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-bash scripts/fetch_public_data.sh        # labels, reports, HIPT code + weights, RT-DC tables
+bash scripts/fetch_public_data.sh                 # labels, reports, HIPT code and weights, RT-DC tables (see DATA.md)
+python src/00_inventory.py                        # cohort and shared splits
+python src/01_reports.py                          # report masking (M0/M1/M2)
 ```
 
-Slide tiles (1.4 GB) are not in git: download the 11 `mechanopath_gdc_tiles_partNN.zip` files from the release,
-or regenerate them with `harvest/gdc_tile_harvester.js`, and point `UPLOADS` in `src/02_tiles.py` at their folder.
-To skip the 2.4-hour embedding step, download the two `mechanopath_embeddings_hipt_part*.npz` files from the
-release and join them as described in `data/processed/EMBEDDINGS_README.txt`.
+Full-resolution image and report models (slide download, tiling, Phikon-v2 and HIPT features, attention MIL,
+BiomedBERT, fusion and confounding analyses) run on a Slurm cluster: see `dcc/README_DCC.md`. The Phase 1 results are in
+`results/phase1/`.
 
 ```bash
-python src/00_inventory.py        # cohort + shared splits
-python src/01_reports.py          # report branch with masking
-python src/02_tiles.py            # tile QC + tissue features
-python src/03_embed.py            # HIPT embeddings (or use the release files)
-python src/04_image_models.py
-python src/05_fusion.py
-python src/06_mechanics.py
-python src/07_confounding.py
-python src/08_power.py
-python src/12_nature_figures.py   # figures
-bash report/build_report.sh       # Word report (needs node docx, LibreOffice, poppler)
+python phase2b_biopsies/src/15_mech_biopsy_dcor.py --stages qc,paired,distance,classify,sens   # human biopsies
+python paper_figures/scripts/make_figures.py      # journal figures 2–8 from results/
+python paper_figures/scripts/make_fig1.py         # overview figure and graphical abstract
 ```
 
-Full-resolution rerun on Duke DCC: see `dcc/README_DCC.md`.
+Random seeds are fixed in the code.
 
 ## Data
 
-What is stored here, what is in the release and what is downloaded, with sources and licences: [DATA.md](DATA.md).
+All data are public: TCGA slides (NCI Genomic Data Commons), clinical and molecular annotations (cBioPortal,
+lgggbm_tcga_pub), pathology reports (TCGA-Reports, MIT licence), RT-DC data of glioblastoma lines (figshare,
+doi:10.6084/m9.figshare.28161236, CC BY 4.0), AFM data (RODBUK, doi:10.57903/UJ/3LOV6Q, CC0) and RT-FDC data of human
+biopsies (DCOR, circle soteriou-kubankova; Soteriou et al., Nat. Biomed. Eng. 2023). What is stored here and what is
+downloaded, with licences: [DATA.md](DATA.md).
 
 ## Licence and citation
 

@@ -1,0 +1,41 @@
+analysis,n_units,features,auroc_pooled,paired_accuracy
+gate: paper,36,median deformation,0.7023148148148148,0.6944444444444444
+gate: paper,36,median deformation + size,0.6858024691358023,0.6611111111111111
+gate: paper,36,deciles (deformation),0.6729938271604938,0.6722222222222223
+gate: paper,36,"deciles (deformation, size)",0.6753086419753086,0.7277777777777777
+gate: permissive,39,median deformation,0.7346482577251808,0.7692307692307693
+gate: permissive,39,median deformation + size,0.767784352399737,0.8358974358974358
+gate: permissive,39,deciles (deformation),0.7609467455621302,0.8153846153846154
+gate: permissive,39,"deciles (deformation, size)",0.811439842209073,0.8666666666666666
+gate: large,0,(fewer than 8 evaluable units),,
+regularisation C=0.03,39,median deformation,0.7151873767258383,0.717948717948718
+regularisation C=0.03,39,median deformation + size,0.6912557527942143,0.6820512820512821
+regularisation C=0.03,39,deciles (deformation),0.7079552925706772,0.682051282051282
+regularisation C=0.03,39,"deciles (deformation, size)",0.7099276791584483,0.7333333333333334
+regularisation C=0.3,39,median deformation,0.7136094674556214,0.717948717948718
+regularisation C=0.3,39,median deformation + size,0.6849441157133466,0.6820512820512821
+regularisation C=0.3,39,deciles (deformation),0.6902038132807364,0.6871794871794872
+regularisation C=0.3,39,"deciles (deformation, size)",0.7013806706114398,0.717948717948718
+regularisation C=1.0,39,median deformation,0.7130834976988824,0.717948717948718
+regularisation C=1.0,39,median deformation + size,0.6838921761998684,0.6820512820512821
+regularisation C=1.0,39,deciles (deformation),0.6859960552268245,0.7076923076923076
+regularisation C=1.0,39,"deciles (deformation, size)",0.6963839579224195,0.7435897435897436
+stratum colon-fresh,14,median deformation,0.7489795918367347,0.7857142857142857
+stratum colon-fresh,14,median deformation + size,0.7693877551020408,0.7857142857142857
+stratum colon-fresh,14,deciles (deformation),0.7102040816326531,0.7428571428571429
+stratum colon-fresh,14,"deciles (deformation, size)",0.7051020408163267,0.7571428571428571
+stratum colon-frozen,16,median deformation,0.6703125,0.6875
+stratum colon-frozen,16,median deformation + size,0.70546875,0.7625
+stratum colon-frozen,16,deciles (deformation),0.66640625,0.625
+stratum colon-frozen,16,"deciles (deformation, size)",0.85234375,0.9
+stratum lung-fresh,9,median deformation,0.654320987654321,0.6666666666666666
+stratum lung-fresh,9,median deformation + size,0.7160493827160493,0.6666666666666666
+stratum lung-fresh,9,deciles (deformation),0.6123456790123457,0.5111111111111111
+stratum lung-fresh,9,"deciles (deformation, size)",0.6049382716049383,0.5333333333333334
+main units only,31,median deformation,0.6994797086368366,0.7419354838709677
+main units only,31,median deformation + size,0.6599375650364204,0.703225806451613
+main units only,31,deciles (deformation),0.6799167533818937,0.7548387096774194
+main units only,31,"deciles (deformation, size)",0.690114464099896,0.7419354838709676
+"Young's modulus (LUT-covered events, one fit per measurement)",26,median log10 E (LUT-covered events),0.6014792899408283,0.5384615384615384
+"Young's modulus (LUT-covered events, one fit per measurement)",26,deciles of log10 E,0.752662721893491,0.8076923076923077
+"Young's modulus (LUT-covered events, one fit per measurement)",26,median log10 E + median size,0.5872781065088757,0.5307692307692308

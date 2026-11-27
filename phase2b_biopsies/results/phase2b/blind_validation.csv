@@ -1,0 +1,11 @@
+features,n_units,auroc,paired_accuracy,units_correct
+median deformation,8,0.75,0.625,5.0
+mean deformation,8,0.703125,0.625,5.0
+median deformation + size,8,0.734375,0.625,5.0
+median + spread (deformation),8,0.71875,0.625,5.0
+"median + spread (deformation, size)",8,0.75,0.75,6.0
+moments (deformation),8,0.703125,0.625,5.0
+deciles (deformation),8,0.6875,0.625,5.0
+"deciles (deformation, size)",8,0.78125,0.75,6.0
+"deciles (deformation, size) + brightness",8,0.796875,0.75,6.0
+brightness only,8,0.6875,0.625,5.0

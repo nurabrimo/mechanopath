@@ -1,0 +1,313 @@
+unit,condition,features,score
+colon-fresh-S6,tumour,median deformation,0.0683
+colon-fresh-S15,tumour,median deformation,1.7848
+colon-frozen-S7,tumour,median deformation,0.1632
+colon-frozen-S11,tumour,median deformation,0.0708
+colon-fresh-S7,tumour,median deformation,0.178
+colon-frozen-ED1,healthy,median deformation,0.4472
+colon-frozen-S1,tumour,median deformation,-0.1109
+colon-fresh-S11,healthy,median deformation,-1.1106
+lung-fresh-S5,tumour,median deformation,-0.5704
+colon-fresh-S4,healthy,median deformation,-0.2229
+colon-frozen-S12,tumour,median deformation,0.011
+colon-frozen-S4,tumour,median deformation,1.1863
+colon-fresh-S4,tumour,median deformation,0.6977
+colon-fresh-S14,healthy,median deformation,-1.1614
+colon-frozen-S13,healthy,median deformation,-0.802
+colon-fresh-S6,healthy,median deformation,-0.8627
+lung-fresh-S9,tumour,median deformation,1.5824
+colon-frozen-ED3,healthy,median deformation,-0.3765
+colon-fresh-S3,healthy,median deformation,1.2423
+colon-fresh-S1,healthy,median deformation,-1.6214
+lung-fresh-S7,healthy,median deformation,-1.3149
+colon-frozen-S7,healthy,median deformation,-0.3847
+colon-frozen-ED3,tumour,median deformation,0.3233
+colon-fresh-S3,tumour,median deformation,-0.0553
+lung-fresh-S4,tumour,median deformation,-0.7371
+lung-fresh-S7,tumour,median deformation,-0.2868
+colon-fresh-S1,tumour,median deformation,-0.4351
+lung-fresh-S3,tumour,median deformation,0.8944
+colon-frozen-S3,tumour,median deformation,1.1683
+colon-fresh-S5,healthy,median deformation,-0.2078
+colon-fresh-S2,healthy,median deformation,0.0697
+colon-frozen-S16,healthy,median deformation,-0.8573
+colon-frozen-S5,tumour,median deformation,-0.8853
+colon-frozen-S9,healthy,median deformation,-0.0155
+colon-frozen-S14,healthy,median deformation,-1.3072
+colon-frozen-S6,healthy,median deformation,0.3788
+colon-frozen-S4,healthy,median deformation,1.2175
+lung-fresh-S4,healthy,median deformation,-0.2582
+lung-fresh-S6,tumour,median deformation,-1.1062
+lung-fresh-S5,healthy,median deformation,-0.9912
+colon-fresh-S5,tumour,median deformation,-0.5058
+colon-fresh-S8,tumour,median deformation,-0.7468
+colon-fresh-S14,tumour,median deformation,0.473
+colon-fresh-S2,tumour,median deformation,0.4426
+colon-frozen-S12,healthy,median deformation,-1.1147
+colon-fresh-S9,tumour,median deformation,0.304
+lung-fresh-S8,tumour,median deformation,1.622
+colon-fresh-S10,tumour,median deformation,1.4467
+lung-fresh-S3,healthy,median deformation,-0.7142
+colon-frozen-S8,tumour,median deformation,-0.2721
+lung-fresh-S6,healthy,median deformation,-0.1237
+colon-fresh-S11,tumour,median deformation,1.2682
+colon-frozen-S13,tumour,median deformation,-0.1465
+colon-frozen-S16,tumour,median deformation,-0.9679
+colon-frozen-S8,healthy,median deformation,0.2108
+lung-fresh-S8,healthy,median deformation,-1.3709
+colon-frozen-S3,healthy,median deformation,-0.268
+colon-frozen-S1,healthy,median deformation,-0.1735
+lung-fresh-S9,healthy,median deformation,1.9498
+colon-frozen-S14,tumour,median deformation,0.6456
+colon-frozen-S9,tumour,median deformation,0.4246
+colon-fresh-S8,healthy,median deformation,-1.3385
+colon-fresh-S16,healthy,median deformation,2.0976
+lung-fresh-S2,tumour,median deformation,0.5426
+lung-fresh-S2,healthy,median deformation,-0.5755
+lung-fresh-S1,tumour,median deformation,2.1371
+colon-fresh-S15,healthy,median deformation,-1.2673
+colon-frozen-ED2,tumour,median deformation,0.048
+colon-frozen-S6,tumour,median deformation,0.7522
+colon-fresh-S7,healthy,median deformation,-0.2644
+colon-frozen-ED2,healthy,median deformation,0.2436
+colon-frozen-ED1,tumour,median deformation,0.5253
+colon-frozen-S5,healthy,median deformation,-0.9127
+colon-fresh-S16,tumour,median deformation,0.7595
+colon-fresh-S9,healthy,median deformation,0.1019
+lung-fresh-S1,healthy,median deformation,0.3273
+colon-fresh-S10,healthy,median deformation,-0.0959
+colon-frozen-S11,healthy,median deformation,0.1353
+colon-fresh-S6,tumour,median deformation + size,0.0732
+colon-fresh-S15,tumour,median deformation + size,1.8235
+colon-frozen-S7,tumour,median deformation + size,0.1874
+colon-frozen-S11,tumour,median deformation + size,0.0767
+colon-fresh-S7,tumour,median deformation + size,0.2553
+colon-frozen-ED1,healthy,median deformation + size,0.4609
+colon-frozen-S1,tumour,median deformation + size,-0.4061
+colon-fresh-S11,healthy,median deformation + size,-1.1948
+lung-fresh-S5,tumour,median deformation + size,-0.5973
+colon-fresh-S4,healthy,median deformation + size,0.0095
+colon-frozen-S12,tumour,median deformation + size,0.0917
+colon-frozen-S4,tumour,median deformation + size,1.1819
+colon-fresh-S4,tumour,median deformation + size,0.8743
+colon-fresh-S14,healthy,median deformation + size,-1.1897
+colon-frozen-S13,healthy,median deformation + size,-0.8472
+colon-fresh-S6,healthy,median deformation + size,-0.931
+lung-fresh-S9,tumour,median deformation + size,1.5672
+colon-frozen-ED3,healthy,median deformation + size,-0.3973
+colon-fresh-S3,healthy,median deformation + size,1.2495
+colon-fresh-S1,healthy,median deformation + size,-1.5886
+lung-fresh-S7,healthy,median deformation + size,-1.2937
+colon-frozen-S7,healthy,median deformation + size,-0.3666
+colon-frozen-ED3,tumour,median deformation + size,0.3386
+colon-fresh-S3,tumour,median deformation + size,-0.0833
+lung-fresh-S4,tumour,median deformation + size,-0.7957
+lung-fresh-S7,tumour,median deformation + size,-0.3103
+colon-fresh-S1,tumour,median deformation + size,-0.4727
+lung-fresh-S3,tumour,median deformation + size,0.867
+colon-frozen-S3,tumour,median deformation + size,1.0986
+colon-fresh-S5,healthy,median deformation + size,-0.2101
+colon-fresh-S2,healthy,median deformation + size,0.0602
+colon-frozen-S16,healthy,median deformation + size,-1.0848
+colon-frozen-S5,tumour,median deformation + size,-0.8796
+colon-frozen-S9,healthy,median deformation + size,0.2508
+colon-frozen-S14,healthy,median deformation + size,-1.2513
+colon-frozen-S6,healthy,median deformation + size,0.3916
+colon-frozen-S4,healthy,median deformation + size,1.2103
+lung-fresh-S4,healthy,median deformation + size,-0.2358
+lung-fresh-S6,tumour,median deformation + size,-0.9782
+lung-fresh-S5,healthy,median deformation + size,-0.9705
+colon-fresh-S5,tumour,median deformation + size,-0.4982
+colon-fresh-S8,tumour,median deformation + size,-0.7879
+colon-fresh-S14,tumour,median deformation + size,0.4627
+colon-fresh-S2,tumour,median deformation + size,0.4365
+colon-frozen-S12,healthy,median deformation + size,-1.0057
+colon-fresh-S9,tumour,median deformation + size,0.3312
+lung-fresh-S8,tumour,median deformation + size,1.5547
+colon-fresh-S10,tumour,median deformation + size,1.4577
+lung-fresh-S3,healthy,median deformation + size,-0.7869
+colon-frozen-S8,tumour,median deformation + size,-0.4098
+lung-fresh-S6,healthy,median deformation + size,-0.0015
+colon-fresh-S11,tumour,median deformation + size,1.2754
+colon-frozen-S13,tumour,median deformation + size,-0.2169
+colon-frozen-S16,tumour,median deformation + size,-1.2255
+colon-frozen-S8,healthy,median deformation + size,0.3762
+lung-fresh-S8,healthy,median deformation + size,-1.5575
+colon-frozen-S3,healthy,median deformation + size,-0.3553
+colon-frozen-S1,healthy,median deformation + size,0.8202
+lung-fresh-S9,healthy,median deformation + size,1.9331
+colon-frozen-S14,tumour,median deformation + size,0.6324
+colon-frozen-S9,tumour,median deformation + size,0.3613
+colon-fresh-S8,healthy,median deformation + size,-1.3988
+colon-fresh-S16,healthy,median deformation + size,2.1103
+lung-fresh-S2,tumour,median deformation + size,0.4177
+lung-fresh-S2,healthy,median deformation + size,-0.304
+lung-fresh-S1,tumour,median deformation + size,2.1105
+colon-fresh-S15,healthy,median deformation + size,-1.3698
+colon-frozen-ED2,tumour,median deformation + size,0.0562
+colon-frozen-S6,tumour,median deformation + size,0.7154
+colon-fresh-S7,healthy,median deformation + size,-0.3042
+colon-frozen-ED2,healthy,median deformation + size,0.2801
+colon-frozen-ED1,tumour,median deformation + size,0.5025
+colon-frozen-S5,healthy,median deformation + size,-0.906
+colon-fresh-S16,tumour,median deformation + size,0.7585
+colon-fresh-S9,healthy,median deformation + size,0.0863
+lung-fresh-S1,healthy,median deformation + size,0.2969
+colon-fresh-S10,healthy,median deformation + size,-0.0906
+colon-frozen-S11,healthy,median deformation + size,0.2611
+colon-fresh-S6,tumour,deciles (deformation),0.0687
+colon-fresh-S15,tumour,deciles (deformation),1.9605
+colon-frozen-S7,tumour,deciles (deformation),-0.5911
+colon-frozen-S11,tumour,deciles (deformation),-0.0692
+colon-fresh-S7,tumour,deciles (deformation),0.4201
+colon-frozen-ED1,healthy,deciles (deformation),1.2362
+colon-frozen-S1,tumour,deciles (deformation),-0.0468
+colon-fresh-S11,healthy,deciles (deformation),-1.8648
+lung-fresh-S5,tumour,deciles (deformation),-0.3705
+colon-fresh-S4,healthy,deciles (deformation),-0.2733
+colon-frozen-S12,tumour,deciles (deformation),0.6353
+colon-frozen-S4,tumour,deciles (deformation),1.2485
+colon-fresh-S4,tumour,deciles (deformation),0.7874
+colon-fresh-S14,healthy,deciles (deformation),-1.1373
+colon-frozen-S13,healthy,deciles (deformation),-0.7425
+colon-fresh-S6,healthy,deciles (deformation),-0.88
+lung-fresh-S9,tumour,deciles (deformation),1.4621
+colon-frozen-ED3,healthy,deciles (deformation),-0.8488
+colon-fresh-S3,healthy,deciles (deformation),1.7687
+colon-fresh-S1,healthy,deciles (deformation),-1.5319
+lung-fresh-S7,healthy,deciles (deformation),-1.6691
+colon-frozen-S7,healthy,deciles (deformation),-1.8971
+colon-frozen-ED3,tumour,deciles (deformation),0.5396
+colon-fresh-S3,tumour,deciles (deformation),-0.0953
+lung-fresh-S4,tumour,deciles (deformation),-0.5552
+lung-fresh-S7,tumour,deciles (deformation),-0.4956
+colon-fresh-S1,tumour,deciles (deformation),-0.5027
+lung-fresh-S3,tumour,deciles (deformation),1.0949
+colon-frozen-S3,tumour,deciles (deformation),0.988
+colon-fresh-S5,healthy,deciles (deformation),-0.3218
+colon-fresh-S2,healthy,deciles (deformation),0.3077
+colon-frozen-S16,healthy,deciles (deformation),-1.0784
+colon-frozen-S5,tumour,deciles (deformation),-0.5962
+colon-frozen-S9,healthy,deciles (deformation),-0.0352
+colon-frozen-S14,healthy,deciles (deformation),-0.9565
+colon-frozen-S6,healthy,deciles (deformation),0.117
+colon-frozen-S4,healthy,deciles (deformation),1.5641
+lung-fresh-S4,healthy,deciles (deformation),0.0035
+lung-fresh-S6,tumour,deciles (deformation),-1.3477
+lung-fresh-S5,healthy,deciles (deformation),-0.999
+colon-fresh-S5,tumour,deciles (deformation),-0.4889
+colon-fresh-S8,tumour,deciles (deformation),-0.7385
+colon-fresh-S14,tumour,deciles (deformation),0.5727
+colon-fresh-S2,tumour,deciles (deformation),0.7532
+colon-frozen-S12,healthy,deciles (deformation),-1.562
+colon-fresh-S9,tumour,deciles (deformation),0.4657
+lung-fresh-S8,tumour,deciles (deformation),1.4601
+colon-fresh-S10,tumour,deciles (deformation),1.8305
+lung-fresh-S3,healthy,deciles (deformation),-0.7409
+colon-frozen-S8,tumour,deciles (deformation),0.0005
+lung-fresh-S6,healthy,deciles (deformation),0.2069
+colon-fresh-S11,tumour,deciles (deformation),1.0117
+colon-frozen-S13,tumour,deciles (deformation),-0.1683
+colon-frozen-S16,tumour,deciles (deformation),-1.2569
+colon-frozen-S8,healthy,deciles (deformation),0.1934
+lung-fresh-S8,healthy,deciles (deformation),-1.9291
+colon-frozen-S3,healthy,deciles (deformation),-0.3159
+colon-frozen-S1,healthy,deciles (deformation),0.1198
+lung-fresh-S9,healthy,deciles (deformation),2.0925
+colon-frozen-S14,tumour,deciles (deformation),0.505
+colon-frozen-S9,tumour,deciles (deformation),0.7238
+colon-fresh-S8,healthy,deciles (deformation),-1.4338
+colon-fresh-S16,healthy,deciles (deformation),2.5863
+lung-fresh-S2,tumour,deciles (deformation),1.0943
+lung-fresh-S2,healthy,deciles (deformation),-0.2935
+lung-fresh-S1,tumour,deciles (deformation),1.7544
+colon-fresh-S15,healthy,deciles (deformation),-1.9689
+colon-frozen-ED2,tumour,deciles (deformation),0.0805
+colon-frozen-S6,tumour,deciles (deformation),0.9508
+colon-fresh-S7,healthy,deciles (deformation),-0.1185
+colon-frozen-ED2,healthy,deciles (deformation),0.2537
+colon-frozen-ED1,tumour,deciles (deformation),0.9678
+colon-frozen-S5,healthy,deciles (deformation),-0.4694
+colon-fresh-S16,tumour,deciles (deformation),0.8526
+colon-fresh-S9,healthy,deciles (deformation),0.6129
+lung-fresh-S1,healthy,deciles (deformation),0.4248
+colon-fresh-S10,healthy,deciles (deformation),0.3518
+colon-frozen-S11,healthy,deciles (deformation),-0.0992
+colon-fresh-S6,tumour,"deciles (deformation, size)",-0.1211
+colon-fresh-S15,tumour,"deciles (deformation, size)",2.2926
+colon-frozen-S7,tumour,"deciles (deformation, size)",0.0588
+colon-frozen-S11,tumour,"deciles (deformation, size)",0.316
+colon-fresh-S7,tumour,"deciles (deformation, size)",0.683
+colon-frozen-ED1,healthy,"deciles (deformation, size)",0.9415
+colon-frozen-S1,tumour,"deciles (deformation, size)",0.0371
+colon-fresh-S11,healthy,"deciles (deformation, size)",-1.7252
+lung-fresh-S5,tumour,"deciles (deformation, size)",-0.2061
+colon-fresh-S4,healthy,"deciles (deformation, size)",0.4881
+colon-frozen-S12,tumour,"deciles (deformation, size)",-0.1252
+colon-frozen-S4,tumour,"deciles (deformation, size)",1.8649
+colon-fresh-S4,tumour,"deciles (deformation, size)",0.8407
+colon-fresh-S14,healthy,"deciles (deformation, size)",-1.2481
+colon-frozen-S13,healthy,"deciles (deformation, size)",-0.2075
+colon-fresh-S6,healthy,"deciles (deformation, size)",-0.3251
+lung-fresh-S9,tumour,"deciles (deformation, size)",1.1696
+colon-frozen-ED3,healthy,"deciles (deformation, size)",-0.9292
+colon-fresh-S3,healthy,"deciles (deformation, size)",2.1636
+colon-fresh-S1,healthy,"deciles (deformation, size)",-0.4399
+lung-fresh-S7,healthy,"deciles (deformation, size)",-1.5549
+colon-frozen-S7,healthy,"deciles (deformation, size)",-3.3337
+colon-frozen-ED3,tumour,"deciles (deformation, size)",0.1654
+colon-fresh-S3,tumour,"deciles (deformation, size)",0.0726
+lung-fresh-S4,tumour,"deciles (deformation, size)",-0.5652
+lung-fresh-S7,tumour,"deciles (deformation, size)",-0.3219
+colon-fresh-S1,tumour,"deciles (deformation, size)",-1.2702
+lung-fresh-S3,tumour,"deciles (deformation, size)",1.0407
+colon-frozen-S3,tumour,"deciles (deformation, size)",1.0934
+colon-fresh-S5,healthy,"deciles (deformation, size)",-0.8129
+colon-fresh-S2,healthy,"deciles (deformation, size)",0.3747
+colon-frozen-S16,healthy,"deciles (deformation, size)",-1.5137
+colon-frozen-S5,tumour,"deciles (deformation, size)",0.0112
+colon-frozen-S9,healthy,"deciles (deformation, size)",0.6455
+colon-frozen-S14,healthy,"deciles (deformation, size)",-1.2415
+colon-frozen-S6,healthy,"deciles (deformation, size)",-0.1683
+colon-frozen-S4,healthy,"deciles (deformation, size)",0.9097
+lung-fresh-S4,healthy,"deciles (deformation, size)",-0.7626
+lung-fresh-S6,tumour,"deciles (deformation, size)",-1.9815
+lung-fresh-S5,healthy,"deciles (deformation, size)",-0.2379
+colon-fresh-S5,tumour,"deciles (deformation, size)",-1.1131
+colon-fresh-S8,tumour,"deciles (deformation, size)",-0.5429
+colon-fresh-S14,tumour,"deciles (deformation, size)",0.6026
+colon-fresh-S2,tumour,"deciles (deformation, size)",0.7066
+colon-frozen-S12,healthy,"deciles (deformation, size)",-1.2514
+colon-fresh-S9,tumour,"deciles (deformation, size)",0.8485
+lung-fresh-S8,tumour,"deciles (deformation, size)",1.3912
+colon-fresh-S10,tumour,"deciles (deformation, size)",1.7899
+lung-fresh-S3,healthy,"deciles (deformation, size)",-1.4138
+colon-frozen-S8,tumour,"deciles (deformation, size)",0.2724
+lung-fresh-S6,healthy,"deciles (deformation, size)",0.2245
+colon-fresh-S11,tumour,"deciles (deformation, size)",0.8452
+colon-frozen-S13,tumour,"deciles (deformation, size)",0.2585
+colon-frozen-S16,tumour,"deciles (deformation, size)",-0.8889
+colon-frozen-S8,healthy,"deciles (deformation, size)",0.0791
+lung-fresh-S8,healthy,"deciles (deformation, size)",-2.6888
+colon-frozen-S3,healthy,"deciles (deformation, size)",-0.7732
+colon-frozen-S1,healthy,"deciles (deformation, size)",1.137
+lung-fresh-S9,healthy,"deciles (deformation, size)",5.3157
+colon-frozen-S14,tumour,"deciles (deformation, size)",0.971
+colon-frozen-S9,tumour,"deciles (deformation, size)",0.8735
+colon-fresh-S8,healthy,"deciles (deformation, size)",-1.0475
+colon-fresh-S16,healthy,"deciles (deformation, size)",2.231
+lung-fresh-S2,tumour,"deciles (deformation, size)",0.8073
+lung-fresh-S2,healthy,"deciles (deformation, size)",0.0767
+lung-fresh-S1,tumour,"deciles (deformation, size)",1.938
+colon-fresh-S15,healthy,"deciles (deformation, size)",-1.9649
+colon-frozen-ED2,tumour,"deciles (deformation, size)",0.1087
+colon-frozen-S6,tumour,"deciles (deformation, size)",1.3369
+colon-fresh-S7,healthy,"deciles (deformation, size)",-0.769
+colon-frozen-ED2,healthy,"deciles (deformation, size)",-0.0749
+colon-frozen-ED1,tumour,"deciles (deformation, size)",0.6414
+colon-frozen-S5,healthy,"deciles (deformation, size)",-1.1117
+colon-fresh-S16,tumour,"deciles (deformation, size)",0.7853
+colon-fresh-S9,healthy,"deciles (deformation, size)",1.2177
+lung-fresh-S1,healthy,"deciles (deformation, size)",-0.1247
+colon-fresh-S10,healthy,"deciles (deformation, size)",-0.0915
+colon-frozen-S11,healthy,"deciles (deformation, size)",0.1236

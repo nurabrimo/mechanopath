@@ -1,0 +1,4 @@
+patient,institution,GRADE,HISTOLOGICAL_DIAGNOSIS,who2021_like,dxline_gbm
+TCGA-DU-6542,Henry Ford Hospital,G3,oligoastrocytoma,Astro_IDHmut,True
+TCGA-DU-A76L,Henry Ford Hospital,G3,oligodendroglioma,GBM_IDHwt,True
+TCGA-TM-A84J,The University of New South Wales,G3,oligodendroglioma,IDHwt_other,True

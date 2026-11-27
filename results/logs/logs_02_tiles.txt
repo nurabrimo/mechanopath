@@ -1,0 +1,4 @@
+slides: 877 {'TCGA-LGG': 489, 'TCGA-GBM': 388}
+tiles: 13966
+tiles passing QC: 0.95 {'x20': 0.954, 'x5': 0.938}
+handcrafted patient features: (875, 84)

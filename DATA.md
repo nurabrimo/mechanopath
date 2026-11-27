@@ -23,6 +23,12 @@ only by their public TCGA barcodes.
 | `data/raw/tiles/gdc_manifest.json` | GDC file IDs and tissue-source sites of the 880 slides | NCI GDC |
 | `data/raw/idc/idc_tcga_glioma_sm_series.csv` | IDC slide index extract (cross-check) | idc-index-data 25.0.0 |
 | `results/` | metric tables, out-of-fold predictions, audits, logs | this project |
+| `data/processed/afm_events.csv` | AFM Young's moduli of LN229 and U87 cells | RODBUK, doi:10.57903/UJ/3LOV6Q, CC0 |
+| `phase2b_biopsies/results/phase2b/` | per-measurement descriptors, paired effects, distances, classification, sensitivity analyses of 78 RT-FDC measurements (39 tumour–healthy units) | DCOR circle soteriou-kubankova (Soteriou et al., Nat. Biomed. Eng. 2023); event data are read from DCOR, not stored here |
+| `results/real_images/` | slide thumbnails and 128-µm tiles of TCGA-02-0099 (GBM) and TCGA-R8-A6ML (LGG), and RT-FDC images of single cells from one tumour–healthy pair; sources in `provenance.json` | NCI GDC (open access); DCOR |
+
+The pretrained HIPT weights (`vit256_small_dino.pth`) carry a non-commercial licence and are not redistributed here;
+`scripts/fetch_public_data.sh` downloads them from the original repository. Phikon-v2 is loaded from Hugging Face.
 | `figures/` | figures; `figures/nature/` holds the Nature-style PDFs and 300-dpi previews | this project |
 
 ## In the v1.0 release (attach these files when you create it)

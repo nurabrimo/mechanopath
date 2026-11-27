@@ -1,0 +1,13 @@
+descriptor,component,partial_R2
+D_median,C(condition),0.29295821367620484
+D_median,C(unit),0.6425799914910224
+D_median,residual,0.31131579535806286
+D_iqr,C(condition),2.30001660114921e-05
+D_iqr,C(unit),0.5523483597552306
+D_iqr,residual,0.4476470311371541
+A_median,C(condition),0.0012520164387682764
+A_median,C(unit),0.6050771845106385
+A_median,residual,0.3947273979178805
+A_iqr,C(condition),0.0043590642490676035
+A_iqr,C(unit),0.6651242977826556
+A_iqr,residual,0.3343854477811291

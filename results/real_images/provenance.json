@@ -1,0 +1,60 @@
+{
+ "GBM": {
+  "patient": "TCGA-02-0099",
+  "slide": "TCGA-02-0099-01Z-00-DX1.E3BD2989-346F-4580-9E67-23BEEA35094E.svs",
+  "mpp": 0.2533,
+  "coords_attrs": {
+   "appmag": "40.0",
+   "encoder": "phikon2",
+   "height0": "73480",
+   "jpeg_q": "70",
+   "mpp0": "0.2533",
+   "read_level": "0",
+   "read_size": "505",
+   "scan_date": "10/01/14",
+   "scanner": "SS7054",
+   "size0": "505",
+   "target_mpp": "0.5",
+   "tile": "256",
+   "tissue_frac_thumb": "0.5213637006631194",
+   "vendor": "aperio",
+   "width0": "95615",
+   "wsi": "/cwork/nb295/mechanopath/wsi/b822fb8f-b9f7-4519-9db7-f86535ff5b6b/TCGA-02-0099-01Z-00-DX1.E3BD2989-346F-4580-9E67-23BEEA35094E.svs"
+  }
+ },
+ "LGG": {
+  "patient": "TCGA-R8-A6ML",
+  "slide": "TCGA-R8-A6ML-01Z-00-DX1.22E320A4-A5B4-4D32-83C6-CD83199E2B4C.svs",
+  "mpp": 0.2517,
+  "coords_attrs": {
+   "appmag": "40.0",
+   "encoder": "phikon2",
+   "height0": "77069",
+   "jpeg_q": "70",
+   "mpp0": "0.2517",
+   "read_level": "0",
+   "read_size": "509",
+   "scan_date": "11/12/14",
+   "scanner": "SS7095",
+   "size0": "509",
+   "target_mpp": "0.5",
+   "tile": "256",
+   "tissue_frac_thumb": "0.5247085191960705",
+   "vendor": "aperio",
+   "width0": "126615",
+   "wsi": "/cwork/nb295/mechanopath/wsi/a93517f4-83cb-473e-b0c1-0240fe33c569/TCGA-R8-A6ML-01Z-00-DX1.22E320A4-A5B4-4D32-83C6-CD83199E2B4C.svs"
+  }
+ },
+ "cells_tumour": {
+  "unit": "colon-fresh-S6",
+  "dcor_resource": "034a0abe-34e1-4680-9bc2-6f53ad4e287a",
+  "n": 8,
+  "deform_median": 0.03735946863889694
+ },
+ "cells_healthy": {
+  "unit": "colon-fresh-S6",
+  "dcor_resource": "2da4b708-4d35-4c45-86c5-45cf1efc75e1",
+  "n": 8,
+  "deform_median": 0.03596162050962448
+ }
+}

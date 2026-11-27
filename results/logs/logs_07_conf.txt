@@ -1,0 +1,136 @@
+project                TCGA-GBM  TCGA-LGG
+appmag=20                   230         0
+appmag=40                   158       489
+jpeg_q=30                   121       364
+jpeg_q=70                   267       125
+aperio_major=9.0            108         0
+aperio_major=10.0           175        52
+aperio_major=11.0             1        36
+aperio_major=12.0            84       348
+aperio_major=missing         20        53
+scan_year=2008.0             68         0
+scan_year=2009.0            114         0
+scan_year=2010.0             49         0
+scan_year=2011.0             52        37
+scan_year=2012.0             18        56
+scan_year=2013.0              4       105
+scan_year=2014.0             83       241
+scan_year=2015.0              0        32
+scan_year=missing             0        18
+compression=J2K/KDU           0        36
+compression=J2K/MIL          19         0
+compression=J2K/YUV16       103        72
+compression=JPEG/RGB        266       381
+target (GBM slides only)                                features   n  n_pos  auroc    lo    hi
+          scanned_at_20x              HIPT embedding (20x tiles) 386    230  0.993 0.979 1.000
+          scanned_at_20x            hand-crafted tissue features 386    230  0.824 0.782 0.865
+          scanned_at_20x all hand-crafted incl. colour/sharpness 386    230  0.939 0.913 0.962
+                jpeg_q70              HIPT embedding (20x tiles) 386    265  0.953 0.925 0.977
+                jpeg_q70            hand-crafted tissue features 386    265  0.764 0.711 0.814
+                jpeg_q70 all hand-crafted incl. colour/sharpness 386    265  0.832 0.785 0.875
+        scan_before_2011              HIPT embedding (20x tiles) 386    231  0.992 0.978 1.000
+        scan_before_2011            hand-crafted tissue features 386    231  0.814 0.770 0.855
+        scan_before_2011 all hand-crafted incl. colour/sharpness 386    231  0.917 0.886 0.946
+branch                 model cohort      scheme   n  auroc_overall  auroc_within_institution_x_scanyear  n_strata  patients_in_strata  auroc_within_jpegq_x_software
+ image          img_meanpool    all institution 875          0.870                                0.819         5                 149                          0.873
+ image             img_abmil    all institution 875          0.869                                0.840         5                 149                          0.841
+ image           handcrafted    all institution 875          0.835                                0.693         5                 149                          0.810
+ image              acq_meta    all institution 875          0.774                                0.409         5                 149                          0.419
+ image           stain_color    all institution 875          0.751                                0.631         5                 149                          0.741
+ image          img_meanpool    all     patient 875          0.942                                0.846         5                 149                          0.927
+ image             img_abmil    all     patient 875          0.945                                0.859         5                 149                          0.932
+ image           handcrafted    all     patient 875          0.894                                0.786         5                 149                          0.855
+ image              acq_meta    all     patient 875          0.929                                0.552         5                 149                          0.801
+ image           stain_color    all     patient 875          0.866                                0.726         5                 149                          0.815
+ image          img_meanpool    x40 institution 645          0.869                                0.850         5                 149                          0.866
+ image             img_abmil    x40 institution 645          0.851                                0.877         5                 149                          0.826
+ image           handcrafted    x40 institution 645          0.803                                0.720         5                 149                          0.789
+ image              acq_meta    x40 institution 645          0.343                                0.444         5                 149                          0.248
+ image           stain_color    x40 institution 645          0.802                                0.712         5                 149                          0.820
+ image          img_meanpool    x40     patient 645          0.938                                0.881         5                 149                          0.928
+ image             img_abmil    x40     patient 645          0.940                                0.895         5                 149                          0.930
+ image           handcrafted    x40     patient 645          0.874                                0.769         5                 149                          0.839
+ image              acq_meta    x40     patient 645          0.820                                0.533         5                 149                          0.749
+ image           stain_color    x40     patient 645          0.873                                0.760         5                 149                          0.867
+report              tfidf_M1    all institution 687          0.845                                0.837         5                 135                          0.856
+report              tfidf_M2    all institution 687          0.813                                0.785         5                 135                          0.812
+report                   age    all institution 687          0.768                                0.767         5                 135                          0.734
+report              tfidf_M1    all     patient 687          0.982                                0.926         5                 135                          0.977
+report              tfidf_M2    all     patient 687          0.977                                0.909         5                 135                          0.969
+report                   age    all     patient 687          0.780                                0.767         5                 135                          0.731
+report              tfidf_M1    x40 institution 557          0.833                                0.780         5                 135                          0.816
+report              tfidf_M2    x40 institution 557          0.802                                0.739         5                 135                          0.775
+report                   age    x40 institution 557          0.771                                0.767         5                 135                          0.722
+report              tfidf_M1    x40     patient 557          0.977                                0.932         5                 135                          0.976
+report              tfidf_M2    x40     patient 557          0.970                                0.920         5                 135                          0.967
+report                   age    x40     patient 557          0.780                                0.770         5                 135                          0.735
+fusion  late_image+report_M2    all institution 686          0.916                                0.874         5                 134                          0.916
+fusion early_image+report_M2    all institution 686          0.859                                0.783         5                 134                          0.871
+fusion  late_image+report_M2    all     patient 686          0.986                                0.928         5                 134                          0.979
+fusion early_image+report_M2    all     patient 686          0.963                                0.859         5                 134                          0.954
+fusion  late_image+report_M2    x40 institution 556          0.908                                0.879         5                 134                          0.898
+fusion early_image+report_M2    x40 institution 556          0.877                                0.795         5                 134                          0.870
+fusion  late_image+report_M2    x40     patient 556          0.979                                0.940         5                 134                          0.978
+fusion early_image+report_M2    x40     patient 556          0.947                                0.874         5                 134                          0.951
+branch                 model cohort      scheme  n_gbm  n_lgg  auroc    lo    hi
+ image          img_meanpool    all institution     15     15  0.773 0.566 0.938
+ image             img_abmil    all institution     15     15  0.862 0.692 0.990
+ image           handcrafted    all institution     15     15  0.720 0.515 0.902
+ image              acq_meta    all institution     15     15  0.618 0.397 0.820
+ image           stain_color    all institution     15     15  0.649 0.431 0.838
+ image          img_meanpool    all     patient     15     15  0.831 0.656 0.962
+ image             img_abmil    all     patient     15     15  0.884 0.725 0.996
+ image           handcrafted    all     patient     15     15  0.751 0.557 0.923
+ image              acq_meta    all     patient     15     15  0.476 0.259 0.704
+ image           stain_color    all     patient     15     15  0.684 0.468 0.862
+ image          img_meanpool    x40 institution     15     15  0.787 0.596 0.940
+ image             img_abmil    x40 institution     15     15  0.884 0.733 0.984
+ image           handcrafted    x40 institution     15     15  0.689 0.478 0.882
+ image              acq_meta    x40 institution     15     15  0.631 0.415 0.835
+ image           stain_color    x40 institution     15     15  0.667 0.449 0.847
+ image          img_meanpool    x40     patient     15     15  0.804 0.624 0.951
+ image             img_abmil    x40     patient     15     15  0.867 0.711 0.978
+ image           handcrafted    x40     patient     15     15  0.684 0.476 0.880
+ image              acq_meta    x40     patient     15     15  0.453 0.237 0.689
+ image           stain_color    x40     patient     15     15  0.698 0.493 0.869
+report              tfidf_M1    all institution     15     14  1.000 1.000 1.000
+report              tfidf_M2    all institution     15     14  0.948 0.856 1.000
+report                   age    all institution     15     14  0.840 0.667 0.966
+report              tfidf_M1    all     patient     15     14  0.976 0.913 1.000
+report              tfidf_M2    all     patient     15     14  0.957 0.875 1.000
+report                   age    all     patient     15     14  0.838 0.662 0.966
+report              tfidf_M1    x40 institution     15     14  0.995 0.971 1.000
+report              tfidf_M2    x40 institution     15     14  0.948 0.836 1.000
+report                   age    x40 institution     15     14  0.840 0.667 0.966
+report              tfidf_M1    x40     patient     15     14  0.971 0.902 1.000
+report              tfidf_M2    x40     patient     15     14  0.943 0.833 1.000
+report                   age    x40     patient     15     14  0.848 0.676 0.971
+fusion  late_image+report_M2    all institution     15     14  0.952 0.853 1.000
+fusion early_image+report_M2    all institution     15     14  0.843 0.667 0.971
+fusion  late_image+report_M2    all     patient     15     14  0.971 0.904 1.000
+fusion early_image+report_M2    all     patient     15     14  0.895 0.750 1.000
+fusion  late_image+report_M2    x40 institution     15     14  0.943 0.832 1.000
+fusion early_image+report_M2    x40 institution     15     14  0.852 0.682 0.976
+fusion  late_image+report_M2    x40     patient     15     14  0.957 0.868 1.000
+fusion early_image+report_M2    x40     patient     15     14  0.886 0.714 1.000
+branch                 model      scheme   n  LR_chi2   p  odds_ratio_per_logit  acq_only_auroc_in_sample  acq_plus_score_auroc_in_sample
+ image          img_meanpool institution 627 207.0203 0.0                2.2851                    0.6802                          0.8940
+ image             img_abmil institution 627 184.3973 0.0                1.6666                    0.6802                          0.8791
+ image           handcrafted institution 627 117.7108 0.0                1.9274                    0.6802                          0.8358
+ image              acq_meta institution 627  55.7722 0.0                0.7140                    0.6802                          0.7602
+ image           stain_color institution 627 141.8698 0.0                1.9820                    0.6802                          0.8514
+ image          img_meanpool     patient 627 323.5560 0.0                3.0867                    0.6802                          0.9413
+ image             img_abmil     patient 627 313.3877 0.0                1.9616                    0.6802                          0.9420
+ image           handcrafted     patient 627 207.0401 0.0                2.8615                    0.6802                          0.8858
+ image              acq_meta     patient 627 109.1435 0.0                2.3130                    0.6802                          0.8109
+ image           stain_color     patient 627 199.2718 0.0                2.2667                    0.6802                          0.8872
+report              tfidf_M1 institution 539  81.0036 0.0                1.8169                    0.6689                          0.8436
+report              tfidf_M2 institution 539  58.2599 0.0                1.6501                    0.6689                          0.8153
+report                   age institution 539  71.1174 0.0                2.3269                    0.6689                          0.8083
+report              tfidf_M1     patient 539 343.5206 0.0                2.8363                    0.6689                          0.9803
+report              tfidf_M2     patient 539 327.8642 0.0                2.7350                    0.6689                          0.9740
+report                   age     patient 539  81.0013 0.0                2.4876                    0.6689                          0.8159
+fusion  late_image+report_M2 institution 538 167.4684 0.0                3.7296                    0.6663                          0.9127
+fusion early_image+report_M2 institution 538 132.3721 0.0                3.6176                    0.6663                          0.8852
+fusion  late_image+report_M2     patient 538 357.4505 0.0                4.7065                    0.6663                          0.9813
+fusion early_image+report_M2     patient 538 264.9408 0.0                4.7871                    0.6663                          0.9485
